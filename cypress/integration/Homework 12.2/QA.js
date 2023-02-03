@@ -6,8 +6,10 @@ describe('Тестирование testqastudio.me', function () {
      cy.get('.summary > .cart > .product-button-wrapper > .quantity > .increase > svg').click();
      cy.get('.summary > .cart > .product-button-wrapper > .quantity > .increase > svg').click();
      cy.get('.summary > .cart > .product-button-wrapper > .single_add_to_cart_button').click();
+     cy.wait(5000);
      cy.get('.cart-panel-content > .modal-header > .close-account-panel > .razzi-svg-icon > svg').click();
      cy.get('.header-left-items > .site-branding > .logo > .logo-dark').click();
+     cy.wait(5000);
      cy.get('.post-11337 > .product-inner > .product-summary > .woocommerce-loop-product__title > .woocommerce-LoopProduct-link').click();
      cy.get('.summary > .cart > .product-button-wrapper > .single_add_to_cart_button').click();
      cy.wait(5000);
